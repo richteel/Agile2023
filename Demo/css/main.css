@@ -1,9 +1,297 @@
-html {
-    padding: 2em;
-}
 body {
-    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+    margin: 0;
 }
-#chart2 {
-    max-width: 50%;
+
+#page-container {
+    background-color: white;
 }
+
+#heading {
+    background-color: #001a4a !important;
+    color: white;
+    min-height: 3rem;
+    padding: 1rem;
+}
+
+#heading a {
+    color: white;
+}
+
+#head_info {
+    float: left;
+    padding: 1rem;
+}
+
+#head_info a {
+    text-decoration: none;
+}
+
+#head_info a:visited {
+    text-decoration: none;
+}
+
+#head_info a:hover {
+    text-decoration: none;
+}
+
+#head_info a:active {
+    text-decoration: none;
+}
+
+#head_menu {
+    float: right;
+    padding: 1rem;
+    text-align: right;
+}
+
+#head_menu a {
+    border: 3px solid white;
+    border-radius: 25px;
+    margin-left: 1rem;
+    padding: 0.75rem;
+    text-decoration: none;
+}
+
+#head_menu a:visited {
+    text-decoration: none;
+}
+
+#head_menu a:hover {
+    text-decoration: none;
+}
+
+#head_menu a:active {
+    text-decoration: none;
+}
+
+#footing {
+    background-color: #001a4a !important;
+    color: white;
+    min-height: 3rem;
+    padding: 1rem;
+}
+
+#footing a {
+    color: white;
+}
+
+#footing img {
+    max-height: 2rem;
+    vertical-align: middle;
+}
+
+#foot_info {
+    float: left;
+    padding: 1rem;
+    width: 40%;
+}
+
+#foot_info span {
+    display: inline-block;
+    font-size: small;
+}
+
+#foot_menu {
+    float: right;
+    padding: 1rem;
+    text-align: right;
+    width: 40%;
+}
+
+.email:before {
+    content: "\2709  ";
+    position: relative;
+    top: 2px;
+    margin-right: 2px
+}
+
+.email {
+    margin-right: 1rem;
+}
+
+.phone:before {
+    content: "\260e  ";
+    position: relative;
+    top: 2px;
+    margin-right: 2px
+}
+
+.phone {
+    margin-right: 1rem;
+}
+
+.content_block {
+    padding: 1rem;
+    text-align: center;
+}
+
+.content_block:nth-child(even) {
+    background-color: #0066bf;
+    color: white;
+}
+
+.content_block:nth-child(odd) {
+    background-color: white;
+    color: black;
+}
+
+.content_block:nth-child(even) a {
+    background-color: #0066bf;
+    color: white;
+}
+
+.content_block:nth-child(odd) a {
+    background-color: white;
+    color: black;
+}
+
+.content_block ul {
+    display: inline-block;
+    list-style-type: none;
+    margin-block-start: 0;
+    text-align: center;
+}
+
+.content_block li {
+    background-color: silver;
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    color: black;
+    line-height: 2.5rem;
+    margin: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.title_panel h1 {
+    display: inline-block;
+}
+
+.title_panel .logo_container {
+    display: inline-block;
+    height: 9rem;
+    padding-top: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    width: 10rem;
+}
+
+.title_panel .logo_container img {
+    height: 8rem;
+}
+
+.tagline {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.tagline_block {
+    text-align: center;
+}
+
+.tiles_block {
+    text-align: center;
+}
+
+.tile {
+    display: inline-block;
+    text-align: center;
+}
+
+.staff img {
+    border-radius: 5rem;
+    height: 10rem;
+}
+
+/* https://www.webfx.com/blog/web-design/circular-images-css/ */
+/* START: Circular Images with CSS */
+
+.circular--square {
+    border-radius: 50%;
+}
+
+.circular--landscape {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.circular--landscape img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+}
+
+.circular--portrait {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.circular--portrait img {
+    width: 100%;
+    height: auto;
+}
+
+/* END: Circular Images with CSS */
+
+.circle_person {
+    display: inline-block;
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.circle_person img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.office_name_big {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* START: initial changes */
+
+.initial p {
+    line-height: 2rem;
+}
+
+/* END: initial changes */
+
+/* START: revised changes */
+.revised .content_block:nth-child(odd) {
+    background-color: #0066bf;
+    color: white;
+}
+
+.revised .content_block:nth-child(even) {
+    background-color: white;
+    color: black;
+}
+
+.revised .content_block:nth-child(odd) a {
+    background-color: #0066bf;
+    color: white;
+}
+
+.revised .content_block:nth-child(even) a {
+    background-color: white;
+    color: black;
+}
+
+/* END: revised changes */
