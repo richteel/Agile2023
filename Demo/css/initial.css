@@ -124,7 +124,18 @@ body {
 }
 .content_block ul {
     display: inline-block;
-    text-align: left;
+    list-style-type: none;
+    margin-block-start: 0;
+    text-align: center;
+}
+.content_block li {
+    background-color: silver;
+    border-top-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+    line-height: 2em;
+    margin: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .title_panel h1 {
@@ -169,11 +180,11 @@ body {
 }
 .tile {
     display: inline-block;
+    margin-right: 1em;
     text-align: center;
 }
 
 .staff img {
     border-radius: 5em;
     height: 10em;
-    margin-right: 1em;
 }
