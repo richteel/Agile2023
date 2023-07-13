@@ -1,4 +1,9 @@
+html {
+    padding: 2em;
+}
+body {
+    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+}
 #chart2 {
-    height: 50%;
-    width: 50%;
+    max-width: 50%;
 }
