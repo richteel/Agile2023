@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <title>My Local Dentist</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="initial revised">
+    <div id="page-container">
+        <header>
+            <div id="heading" class="">
+                <div id="head_info">
+                    <a href="tel:555-555-5555"><span class="phone">555-555-5555</span></a>
+
+                    <a href="mailto:info@mylocaldentist.com"><span class="email">info@mylocaldentist.com</span></a>
+                </div>
+                &nbsp;
+                <div id="head_menu">
+                    <a href="revised.html">Home</a>
+                </div>
+            </div>
+        </header>
+
+
+        <main>
+            <div class="title_panel content_block">
+                <div class="logo_container">
+                    <img src="images/logo2.png" alt="" />
+                </div>
+                <h1>My Local Dentist</h1>
+            </div>
+            <div class="content_block">
+                <h2>Schedule or Edit an Existing Appointment</h2>
+                <p class="instruction">
+                    If you wish to edit an existing appointment, start by selecting an existing
+                    appointment. The information for the appointment will be populated in the form.
+                    Edit the information and click the "Update" or "Cancel" button.
+                </p>
+                <p class="instruction">
+                    If you wish to create a new appointment, fill out the form and click the "Create"
+                    button.
+                </p>
+                <p class="instruction">
+                    If you have any issues, please feel free to call or email our office.<br />
+                    <a href="tel:555-555-5555"><span class="phone">555-555-5555</span></a><br />
+                    <a href="mailto:info@mylocaldentist.com"><span class="email">info@mylocaldentist.com</span></a>
+                </p>
+            </div>
+
+            <div class="content_block">
+                <h2>Existing Appointments</h2>
+                <div id="existing_appointments">
+
+                </div>
+            </div>
+
+            <div class="content_block">
+
+                <form>
+                    <div class="form_row">
+                        <span class="data_label required_data">New Patient:</span>
+                        <fieldset>
+                            <legend>New Patient:</legend>
+                            <input type="radio" name="new_patient" id="new_patient_yes" value="Yes">
+                            <label for="new_patient_yes" class="radio_label">Yes</label>
+                            <input type="radio" name="new_patient" id="new_patient_no" value="No" />
+                            <label for="new_patient_no" class="radio_label">No</label>
+                        </fieldset>
+                    </div>
+                    <div class="form_row">
+                        <label for="name_last" class="required_data">Last Name:</label>
+                        <input id="name_last" type="text" />
+                    </div>
+                    <div class="form_row">
+                        <label for="name_first" class="required_data">First Name:</label>
+                        <input id="name_first" type="text" />
+                    </div>
+                    <div class="form_row">
+                        <label for="dob" class="required_data">Date of Birth:</label>
+                        <input id="dob" type="date" />
+                    </div>
+                    <div class="form_row">
+                        <label for="appt_date" class="required_data">Appointment Date:</label>
+                        <input id="appt_date" type="date" readonly="readonly" />
+                    </div>
+                    <div class="form_row_no_padding">
+                        <span class="data_label">&nbsp;</span>
+                        <div class="instructions">
+                            Select Appointment Date from calendar below. (Only the next six months are
+                            available.)
+                        </div>
+                    </div>
+                    <div class="form_row_no_padding">
+                        <span class="data_label">&nbsp;</span>
+                        <div id="avail_calendar">
+                            
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <label for="appt_time" class="required_data">Appointment Time:</label>
+                        <input id="appt_time" type="time" min="09:00" max="17:00" step="900" required />
+                    </div>
+                    <div class="form_row">
+                        <label for="appt_type" class="required_data">Appointment Type:</label>
+                        <input id="appt_type" type="text" />
+                    </div>
+                    <div class="form_row">
+                        <label for="appt_note">Notes:</label>
+                        <textarea id="appt_note"></textarea>
+                    </div>
+                    <div class="form_row">
+                        <input type="submit" value="Save" />
+                    </div>
+                </form>
+
+            </div>
+        </main>
+
+        <footer>
+            <div id="footing" class="">
+                <div id="foot_info">
+                    <img src="images/logo2.png" alt="" /><span>&nbsp;&copy;&nbsp;2023&nbsp;My Local Dentist</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <script src="js/calendar.js"></script>
+</body>
+
+</html>

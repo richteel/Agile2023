@@ -294,4 +294,89 @@ body {
     color: black;
 }
 
+.instruction {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    text-align: left;
+}
+
+.required_data:before {
+    content: "*  ";
+}
+
+form {
+    max-width: 80%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form_row {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.form_row label, .form_row .data_label, .form_row_no_padding .data_label{
+    display: inline-block;
+    width: 12rem;
+    text-align: right;
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+.form_row_no_padding {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.radio_label {
+    width: auto !important;
+}
+
+.form_row textarea {
+    min-width: 33%;
+    height: 6rem;
+    vertical-align: top;
+}
+
+.form_row input:read-only {
+    background-color: lightgray;
+}
+
+#avail_calendar {
+    display: inline-block;
+}
+
+#skiptocontent a {
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    color: white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-bottom-right-radius: 8px;
+    background: #BF1722;
+    -webkit-transition: top .5s ease-out;
+    transition: top .5s ease-out;
+    z-index: 100;
+}
+
+fieldset {
+    display: inline-block;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    display: none;
+}
+
+.instructions {
+    display: inline-block;
+    font-style: italic;
+    font-size: smaller;
+}
 /* END: revised changes */
