@@ -317,7 +317,9 @@ form {
     padding-top: 0.5rem;
 }
 
-.form_row label, .form_row .data_label, .form_row_no_padding .data_label{
+.form_row label,
+.form_row .data_label,
+.form_row_no_padding .data_label {
     display: inline-block;
     width: 12rem;
     text-align: right;
@@ -344,8 +346,51 @@ form {
     background-color: lightgray;
 }
 
+.form_buttons_row {
+    text-align: center;
+}
+
+.form_row input[type=submit],
+.form_row input[type=button] {
+    padding: 5px 15px;
+    background: #ccc;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
 #avail_calendar {
     display: inline-block;
+}
+
+#avail_calendar table {
+    padding: 0;
+    border-collapse: collapse;
+    border: black solid 1px;
+    text-align: center;
+    font-size: small;
+}
+
+#avail_calendar th,
+#avail_calendar td {
+    border: 1px solid;
+    padding: 0.25rem;
+}
+
+#avail_calendar .cal_month_row td {
+    border: none;
+}
+
+#avail_calendar .notvalid {
+    background-color: silver;
+}
+
+#avail_calendar .weekend,
+#avail_calendar .holiday {
+    background-color: silver;
+    color: red;
+    border: black solid 1px;
 }
 
 #skiptocontent a {
@@ -379,4 +424,5 @@ legend {
     font-style: italic;
     font-size: smaller;
 }
+
 /* END: revised changes */

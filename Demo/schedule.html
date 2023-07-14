@@ -57,33 +57,33 @@
             </div>
 
             <div class="content_block">
-
-                <form>
+                <h2>Appointment Form</h2>
+                <form method="post" onsubmit="return false;">
                     <div class="form_row">
                         <span class="data_label required_data">New Patient:</span>
                         <fieldset>
                             <legend>New Patient:</legend>
-                            <input type="radio" name="new_patient" id="new_patient_yes" value="Yes">
+                            <input type="radio" name="new_patient" id="new_patient_yes" value="Yes" required />
                             <label for="new_patient_yes" class="radio_label">Yes</label>
-                            <input type="radio" name="new_patient" id="new_patient_no" value="No" />
+                            <input type="radio" name="new_patient" id="new_patient_no" value="No" required />
                             <label for="new_patient_no" class="radio_label">No</label>
                         </fieldset>
                     </div>
                     <div class="form_row">
                         <label for="name_last" class="required_data">Last Name:</label>
-                        <input id="name_last" type="text" />
+                        <input id="name_last" type="text" required />
                     </div>
                     <div class="form_row">
                         <label for="name_first" class="required_data">First Name:</label>
-                        <input id="name_first" type="text" />
+                        <input id="name_first" type="text" required />
                     </div>
                     <div class="form_row">
                         <label for="dob" class="required_data">Date of Birth:</label>
-                        <input id="dob" type="date" />
+                        <input id="dob" type="date" required />
                     </div>
                     <div class="form_row">
                         <label for="appt_date" class="required_data">Appointment Date:</label>
-                        <input id="appt_date" type="date" readonly="readonly" />
+                        <input id="appt_date" type="date" readonly="readonly" required />
                     </div>
                     <div class="form_row_no_padding">
                         <span class="data_label">&nbsp;</span>
@@ -104,14 +104,16 @@
                     </div>
                     <div class="form_row">
                         <label for="appt_type" class="required_data">Appointment Type:</label>
-                        <input id="appt_type" type="text" />
+                        <input id="appt_type" type="text" required />
                     </div>
                     <div class="form_row">
                         <label for="appt_note">Notes:</label>
                         <textarea id="appt_note"></textarea>
                     </div>
                     <div class="form_row">
+                        <span class="data_label">&nbsp;</span>
                         <input type="submit" value="Save" />
+                        <input type="button" value="Clear" onclick="clear_form(this);" />
                     </div>
                 </form>
 
