@@ -83,7 +83,7 @@
                     </div>
                     <div class="form_row">
                         <label for="appt_date" class="required_data">Appointment Date:</label>
-                        <input id="appt_date" type="date" readonly="readonly" required />
+                        <input id="appt_date" type="date" readonly="readonly" tabindex="-1" required />
                     </div>
                     <div class="form_row_no_padding">
                         <span class="data_label">&nbsp;</span>
@@ -103,8 +103,15 @@
                         <input id="appt_time" type="time" min="09:00" max="17:00" step="900" required />
                     </div>
                     <div class="form_row">
-                        <label for="appt_type" class="required_data">Appointment Type:</label>
-                        <input id="appt_type" type="text" required />
+                        <label for="appt_type" class="required_data">Service Type:</label>
+                        <select id="appt_type" required>
+                            <option value="default" selected="selected" disabled>--Select an Option--</option>
+                            <option value="1">Checkup & Cleaning</option>
+                            <option value="2">Cavity Repair</option>
+                            <option value="3">Extraction</option>
+                            <option value="4">Bridges, Dentures, and Implants</option>
+                            <option value="5">Oral Surgery</option>
+                        </select>
                     </div>
                     <div class="form_row">
                         <label for="appt_note">Notes:</label>

@@ -161,10 +161,10 @@ function clear_form(elem) {
 
 function date_selected(elem) {
     let yyyy = cal_months[cal_index]["year"].toString();
-    let mm = cal_months[cal_index]["month"].toString();
+    let mm = (cal_months[cal_index]["month"] + 1).toString();
     let dd = elem.currentTarget.textContent;
 
-    mm < 10 ?  mm = '0'+mm : mm;
+    mm.length = 1 ?  mm = '0'+mm : mm;
     dd < 10 ?  dd = '0'+dd : dd;
     appt_date.value = yyyy + "-" + mm + "-" + dd;
 }
