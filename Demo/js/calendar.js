@@ -164,8 +164,8 @@ function date_selected(elem) {
     let mm = (cal_months[cal_index]["month"] + 1).toString();
     let dd = elem.currentTarget.textContent;
 
-    mm.length = 1 ?  mm = '0'+mm : mm;
-    dd < 10 ?  dd = '0'+dd : dd;
+    mm.length == 1 ?  mm = '0' + mm : mm;
+    dd < 10 ?  dd = '0' + dd : dd;
     appt_date.value = yyyy + "-" + mm + "-" + dd;
 }
 
